@@ -4,6 +4,6 @@ class Solution {
         String str = ""+a+b;
         int ab = Integer.parseInt(str);
         
-        return ab > 2*a*b ? ab : 2*a*b;
+        return Math.max(ab,2*a*b);
     }
 }
