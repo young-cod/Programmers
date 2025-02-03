@@ -8,6 +8,6 @@ class Solution {
                 answer.add(word);
             }
         }
-        return answer.toArray(new String[0]);
+        return my_string.trim().split(" +");
     }
 }
