@@ -1,6 +1,6 @@
 class Solution {
     public int solution(int a, int b, int c) {
-        int answer = 0;
+        int answer = 1;
         
         int cnt = 1;
         if(a==b){
@@ -10,13 +10,8 @@ class Solution {
         }else if(a==c || b==c){
             cnt =2;
         }
-        
-        answer += a+b+c;
-        if(cnt>1){
-            answer *= (Math.pow(a,2)+Math.pow(b,2)+Math.pow(c,2));
-            if(cnt>2){
-              answer *= (Math.pow(a,3)+Math.pow(b,3)+Math.pow(c,3));
-            }
+        for(int i=1; i<=cnt; i++){
+            answer *= (Math.pow(a,i) + Math.pow(b,i) + Math.pow(c,i));
         }
      
         
