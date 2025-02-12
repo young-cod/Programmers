@@ -3,7 +3,10 @@ import java.util.stream.Collectors;
 class Solution {
     public String solution(String my_string, int m, int c) {
         String answer = "";
-        String[] arr = new String[m];    
-        return IntStream.range(0,my_string.length()).filter(i->i%m==c-1).mapToObj(i->my_string.charAt(i)).map(String::valueOf).collect(Collectors.joining());
-}
+        StringBuilder sb= new StringBuilder();
+        for(int i = c-1; i<my_string.length(); i+=m){
+            sb.append(my_string.charAt(i));
+        }
+        return sb.toString();
+    }
 }
