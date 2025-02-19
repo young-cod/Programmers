@@ -17,7 +17,7 @@ class Solution {
             } else {
                 num /= 2;
             }
-            count++;
+            count+=1;
         }
         
         return count;
