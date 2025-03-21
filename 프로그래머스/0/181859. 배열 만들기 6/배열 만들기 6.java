@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Stack;
+import java.util.stream.Stream;
 
 class Solution {
     public int[] solution(int[] arr) {
@@ -16,13 +17,9 @@ class Solution {
                 }
             }
         }
-        int[] answer = new int[s.size()];
-        if(answer.length == 0)return new int[]{-1};
-
-        for(int i=answer.length-1; i>=0; i--){
-            answer[i] = s.pop();
-        }
         
-        return answer;
+        if(s.isEmpty())return new int[]{-1};
+        
+        return s.stream().mapToInt(i->i).toArray();
     }
 }
