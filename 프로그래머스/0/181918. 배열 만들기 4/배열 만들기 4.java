@@ -10,11 +10,12 @@ class Solution {
             if(s.isEmpty()){
                 s.push(arr[i]);
             }else{
-                int temp = s.pop();
-                if(temp < arr[i]){
-                    s.push(temp);
+                if(s.peek() < arr[i]){
                     s.push(arr[i]);
-                }else i--;
+                }else{
+                    s.pop();
+                    i--;
+                }
             }
         }
         
