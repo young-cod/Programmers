@@ -7,9 +7,7 @@ class Solution {
         for(String p : picture){
             sb.setLength(0);
             for(char c : p.toCharArray()){
-                for(int i = 0; i<k; i++){
-                    sb.append(c);
-                }
+                sb.append(String.valueOf(c).repeat(k));
             }
             for(int i = 0; i<k; i++){
                 answer[idx] = sb.toString();
