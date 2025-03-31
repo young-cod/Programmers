@@ -9,10 +9,7 @@ class Solution {
             if(chk)sb.append(Character.toUpperCase(c));
             else sb.append(Character.toLowerCase(c));
 
-            chk = false;
-            if(c==' '){
-                chk = true;
-            }      
+            chk = String.valueOf(c).equals(" ");    
         }
         
         return sb.toString();
