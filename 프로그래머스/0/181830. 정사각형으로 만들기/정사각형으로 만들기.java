@@ -12,9 +12,7 @@ class Solution {
         int[][] answer = new int[max][max];
         
         for(int i = 0; i<arr.length; i++){
-            for(int j = 0; j<arr[i].length; j++){
-                answer[i][j] = arr[i][j];
-            }
+            System.arraycopy(arr[i],0,answer[i],0,arr[0].length);
         }
         return answer;
     }
