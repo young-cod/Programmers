@@ -4,8 +4,6 @@ class Solution {
     public int[][] solution(int[][] arr) {
         int row = arr.length;
         int col = arr[0].length;
-
-        if(row==col)return arr;
         
         int max = Math.max(row,col);
         
