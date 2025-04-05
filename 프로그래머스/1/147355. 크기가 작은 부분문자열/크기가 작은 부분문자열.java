@@ -7,7 +7,7 @@ class Solution {
         for(int i = 0; i<=len; i++){
             if(t.charAt(i) <= p.charAt(0)){
                 Long subNum = Long.parseLong(t.substring(i,i+p.length()));
-                if(subNum.compareTo(pNum)<=0){
+                if(subNum<=pNum){
                     answer++;
                 }
             }
