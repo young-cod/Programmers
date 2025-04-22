@@ -15,8 +15,7 @@ class Solution {
             }
         }
        
-        if(list.size() == 0)return new int[]{-1};
         
-        return list.stream().mapToInt(i->i).toArray();
+        return list.size() == 0 ? new int[]{-1} : list.stream().mapToInt(i->i).toArray();
     }
 }
