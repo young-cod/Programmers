@@ -12,7 +12,7 @@ public class Solution {
             while(idx>0){
                 character++;
                 if(character > z){
-                    character =(character- z) + (a-1);
+                    character = a;
                 }
                 if(!skip.Contains((char)character)){
                     idx--;
