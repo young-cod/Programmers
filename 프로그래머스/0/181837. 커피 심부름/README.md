@@ -1,10 +1,10 @@
 # [level 0] 커피 심부름 - 181837 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181837) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181837?language=csharp) 
 
 ### 성능 요약
 
-메모리: 85.7 MB, 시간: 0.78 ms
+메모리: 31.3 MB, 시간: 0.43 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 02월 26일 12:58:25
+2025년 12월 10일 17:30:07
 
 ### 문제 설명
 
